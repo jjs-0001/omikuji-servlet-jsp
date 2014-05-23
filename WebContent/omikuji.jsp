@@ -4,18 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link
+    href="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css"
+    rel="stylesheet">
 <title>今日の運勢</title>
 </head>
 <body>
 
-<b><p class="text-center">今日の運勢</p></b>
-<H1><p class="text-center">
-  <%= request.getAttribute("result") %>
-</p></H1>
-<p class="text-center">
-  <%= request.getAttribute("hyouka") %>
-</p>
+    <b><p class="text-center">今日の運勢</p></b>
+    <H1>
+        <p class="text-center">
+            <%=request.getAttribute("result")%>
+        </p>
+    </H1>
+    <p class="text-center">
+        <%=request.getAttribute("hyouka")%>
+    </p>
 
 </body>
 </html>
